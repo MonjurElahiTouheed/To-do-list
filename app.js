@@ -12,3 +12,12 @@ function removeItem(button) {
     const li = button.parentNode;
     li.remove();
 }
+
+function delMarked(){
+    const checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+    console.log(checkboxes)
+    checkboxes.forEach( checkbox => {
+        console.log(checkbox);
+        checkbox.remove();
+    })
+}
