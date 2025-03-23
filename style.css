@@ -1,0 +1,7 @@
+.filter_buttons{
+    display: block;
+}
+
+.filter_button{
+    visibility: hidden;
+}

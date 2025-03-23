@@ -13,7 +13,16 @@
     <ul class="todo_list"></ul>
     <button onclick="delMarked()">Delete Marked</button>
     <button onclick="deleteAll()">Delete All</button>
-    <button>Filter</button>
+    <div class="filter_buttons" onmouseover="showfilterBtn()" onmouseout="hidefilterBtn()">
+        
+        <button>Filter</button>
+        <div class="filter_button">
+            <button onclick="marked()">Done</button>
+            <button onclick="unmarked()">Not done yet</button>
+
+        </div>
+
+    </div>
     <p>Completed: </p>
     <p>Total Tasks: </p>
     <script src="app.js"></script>
