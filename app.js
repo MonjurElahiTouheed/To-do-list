@@ -17,7 +17,16 @@ function delMarked(){
     const checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
     console.log(checkboxes)
     checkboxes.forEach( checkbox => {
-        console.log(checkbox);
+        // console.log(checkbox);
+        checkbox.parentNode.remove();
+        // console.log(checkbox.parentNode);
+        
+    })
+}
+function deleteAll(){
+    const checkboxes = document.querySelectorAll('li');
+    console.log(checkboxes)
+    checkboxes.forEach( checkbox => {
         checkbox.remove();
     })
 }
