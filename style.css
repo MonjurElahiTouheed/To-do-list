@@ -9,6 +9,24 @@ main {
     display: block;
 }
 
-.filter_button{
-    visibility: hidden;
+.buttons{
+    position: relative;
+    transition: 0.5s
+}
+
+
+.done_buttons{
+    background: red;
+    width: 80px;
+    height: 0px;
+    margin: 0 auto;
+    position: absolute;
+    top: 22px;
+    left: 441px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.buttons:hover .done_buttons {
+    height: 90px;
 }

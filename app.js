@@ -79,14 +79,14 @@ function completedFunc(){
     
 }
 
-// const filterButton = document.querySelector('.filter_button');
-// function showfilterBtn(){
-//             filterButton.style.visibility='visible';
-// }
+const doneButtons = document.querySelector('.done_buttons');
+function showfilterBtn(){
+            doneButtons.style.height = '90px';
+}
 
-// function hidefilterBtn(){
-//         filterButton.style.visibility='hidden';
-// }
+function hidefilterBtn(){
+    doneButtons.style.height = '0px';
+}
 
 function marked() {
     const checkboxes = document.querySelectorAll('input[type=checkbox]');
