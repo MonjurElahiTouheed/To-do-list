@@ -92,7 +92,10 @@ function marked() {
     const checkboxes = document.querySelectorAll('input[type=checkbox]');
     checkboxes.forEach(checkbox => {
         if (!checkbox.checked) {
-            todoList.removeChild(checkbox.parentElement);
+            checkbox.parentNode.style.display = 'none';
+        }
+        else{
+            checkbox.parentNode.style.display = 'block';
         }
     })
 }
@@ -101,7 +104,10 @@ function unmarked() {
     const checkboxes = document.querySelectorAll('input[type=checkbox]');
     checkboxes.forEach(checkbox => {
         if (checkbox.checked) {
-            todoList.removeChild(checkbox.parentElement);
+            checkbox.parentNode.style.display = 'none';
+        }
+         else{
+            checkbox.parentNode.style.display = 'block';
         }
     })
 }
