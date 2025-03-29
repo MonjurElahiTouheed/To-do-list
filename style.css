@@ -1,16 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
-    animation: roam 60s ease-in-out 1;
     height: 100vh;
+    animation: roam 60s ease-in-out infinite;
 }
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+    font-size: 24px;
+}
+
 main {
-    width: 35%;
+    width: 25%;
     margin: auto;
     text-align: center;
     margin-top: 275px;
-    background-color: white;
+    background: linear-gradient(180deg, aqua, rgb(22, 227, 227) ,skyblue);
     border-radius: 60px;
-    padding: 10px;
-    animation: round 10s ease-in-out infinite
+    padding: 20px 10px;
+    position: relative;
+    font-family: "Kanit", sans-serif;
+}
+
+input[type="text"] {
+    padding: 10px 140px 10px 10px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+#addBtn {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+h3 {
+    font-size: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 13px;
+    width: 30%;
+    padding: 0px 10px;
+    margin: auto;
+    margin-bottom: 35px;
 }
 
 .filter_buttons{
@@ -19,324 +63,92 @@ main {
 
 .buttons{
     position: relative;
-    transition: 0.5s
+    transition: 0.5s;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.removeBtn, .delMarked, .delAll{
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 8px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.delAll{
+    background: rgb(251, 36, 36);
+    margin-left: 7px;
+}
+
+.delMarked{
+    background: rgb(234, 39, 39)
+}
+
+.removeBtn:hover, .delMarked:hover, .delAll:hover{
+    background: transparent;
+    color: red;
+    border: 1px solid red;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .done_buttons{
-    background: red;
-    width: 80px;
+    background: lightgreen;
+    width: 85px;
     height: 0px;
     margin: 0 auto;
     position: absolute;
-    top: 22px;
-    left: 441px;
+    top: 32px;
+    left: 0px;
     transition: 0.5s;
     overflow: hidden;
 }
 
 .buttons:hover .done_buttons {
     height: 90px;
+    padding: 10px;
+    background: lightgreen;
+}
+.filter_button{
+    background-color: lightgreen;
+    color: white;
+    font-weight: 600;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
+.filter_button:hover{
+    color: whitesmoke;
+    border: 1px solid lightgreen;
+    transition: 0.5s;
+    cursor: pointer;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;}
 
-@keyframes roam {
-    1%{
-        background: linear-gradient(0deg, orange, tomato);
-    }
-    2%{
-        background: linear-gradient(4deg, orange, tomato)
-    }
-    3%{
-        background: linear-gradient(7deg, orange, tomato)
-    }
-    4%{
-        background: linear-gradient(10deg, orange, tomato)
-    }
-    5%{
-        background: linear-gradient(15deg, orange, tomato)
-    }
-    6%{
-        background: linear-gradient(20deg, orange, tomato);
-    }
-    7%{
-        background: linear-gradient(25deg, orange, tomato)
-    }
-    8%{
-        background: linear-gradient(30deg, orange, tomato)
-    }
-    9%{
-        background: linear-gradient(35deg, orange, tomato)
-    }
-    10%{
-        background: linear-gradient(40deg, orange, tomato)
-    }
-    11%{
-        background: linear-gradient(45deg, orange, tomato);
-    }
-    12%{
-        background: linear-gradient(50deg, orange, tomato)
-    }
-    13%{
-        background: linear-gradient(53deg, orange, tomato)
-    }
-    14%{
-        background: linear-gradient(57deg, orange, tomato)
-    }
-    15%{
-        background: linear-gradient(61deg, orange, tomato)
-    }
-    16%{
-        background: linear-gradient(63deg, orange, tomato);
-    }
-    17%{
-        background: linear-gradient(68deg, orange, tomato)
-    }
-    18%{
-        background: linear-gradient(71deg, orange, tomato)
-    }
-    19%{
-        background: linear-gradient(73deg, orange, tomato)
-    }
-    20%{
-        background: linear-gradient(76deg, orange, tomato)
-    }
-    21%{
-        background: linear-gradient(80deg, orange, tomato);
-    }
-    22%{
-        background: linear-gradient(86deg, orange, tomato)
-    }
-    23%{
-        background: linear-gradient(89deg, orange, tomato)
-    }
-    24%{
-        background: linear-gradient(93deg, orange, tomato)
-    }
-    25%{
-        background: linear-gradient(95deg, orange, tomato)
-    }
-    26%{
-        background: linear-gradient(100deg, orange, tomato);
-    }
-    27%{
-        background: linear-gradient(102deg, orange, tomato)
-    }
-    28%{
-        background: linear-gradient(105deg, orange, tomato)
-    }
-    29%{
-        background: linear-gradient(109deg, orange, tomato)
-    }
-    30%{
-        background: linear-gradient(114deg, orange, tomato)
-    }
-    31%{
-        background: linear-gradient(120deg, orange, tomato);
-    }
-    32%{
-        background: linear-gradient(125deg, orange, tomato)
-    }
-    33%{
-        background: linear-gradient(127deg, orange, tomato)
-    }
-    34%{
-        background: linear-gradient(130deg, orange, tomato)
-    }
-    35%{
-        background: linear-gradient(133deg, orange, tomato)
-    }
-    36%{
-        background: linear-gradient(137deg, orange, tomato);
-    }
-    37%{
-        background: linear-gradient(140deg, orange, tomato)
-    }
-    38%{
-        background: linear-gradient(145deg, orange, tomato)
-    }
-    39%{
-        background: linear-gradient(151deg, orange, tomato)
-    }
-    40%{
-        background: linear-gradient(157deg, orange, tomato)
-    }
-    41%{
-        background: linear-gradient(161deg, orange, tomato);
-    }
-    42%{
-        background: linear-gradient(164deg, orange, tomato)
-    }
-    43%{
-        background: linear-gradient(166deg, orange, tomato)
-    }
-    44%{
-        background: linear-gradient(169deg, orange, tomato)
-    }
-    45%{
-        background: linear-gradient(171deg, orange, tomato)
-    }
-    46%{
-        background: linear-gradient(173deg, orange, tomato);
-    }
-    47%{
-        background: linear-gradient(175deg, orange, tomato)
-    }
-    48%{
-        background: linear-gradient(177deg, orange, tomato)
-    }
-    49%{
-        background: linear-gradient(179deg, orange, tomato)
-    }
-    50%{
-        background: linear-gradient(180deg, orange, tomato)
-    }
-    51%{
-        background: linear-gradient(185deg, orange, tomato);
-    }
-    52%{
-        background: linear-gradient(190deg, orange, tomato)
-    }
-    53%{
-        background: linear-gradient(200deg, orange, tomato)
-    }
-    54%{
-        background: linear-gradient(210deg, orange, tomato)
-    }
-    55%{
-        background: linear-gradient(214deg, orange, tomato)
-    }
-    56%{
-        background: linear-gradient(218deg, orange, tomato);
-    }
-    57%{
-        background: linear-gradient(221deg, orange, tomato)
-    }
-    58%{
-        background: linear-gradient(226deg, orange, tomato)
-    }
-    59%{
-        background: linear-gradient(230deg, orange, tomato)
-    }
-    60%{
-        background: linear-gradient(232deg, orange, tomato)
-    }
-    61%{
-        background: linear-gradient(235deg, orange, tomato);
-    }
-    62%{
-        background: linear-gradient(239deg, orange, tomato)
-    }
-    63%{
-        background: linear-gradient(242deg, orange, tomato)
-    }
-    64%{
-        background: linear-gradient(247deg, orange, tomato)
-    }
-    65%{
-        background: linear-gradient(250deg, orange, tomato)
-    }
-    67%{
-        background: linear-gradient(255deg, orange, tomato);
-    }
-    68%{
-        background: linear-gradient(257deg, orange, tomato)
-    }
-    69%{
-        background: linear-gradient(260deg, orange, tomato)
-    }
-    70%{
-        background: linear-gradient(263deg, orange, tomato)
-    }
-    71%{
-        background: linear-gradient(267deg, orange, tomato)
-    }
-    72%{
-        background: linear-gradient(270deg, orange, tomato);
-    }
-    73%{
-        background: linear-gradient(273deg, orange, tomato)
-    }
-    74%{
-        background: linear-gradient(276deg, orange, tomato)
-    }
-    75%{
-        background: linear-gradient(280eg, orange, tomato)
-    }
-    76%{
-        background: linear-gradient(282deg, orange, tomato)
-    }
-    77%{
-        background: linear-gradient(284deg, orange, tomato);
-    }
-    78%{
-        background: linear-gradient(286deg, orange, tomato)
-    }
-    79%{
-        background: linear-gradient(290deg, orange, tomato)
-    }
-    80%{
-        background: linear-gradient(295deg, orange, tomato)
-    }
-    81%{
-        background: linear-gradient(300deg, orange, tomato)
-    }
-    82%{
-        background: linear-gradient(303deg, orange, tomato);
-    }
-    83%{
-        background: linear-gradient(307deg, orange, tomato)
-    }
-    84%{
-        background: linear-gradient(310deg, orange, tomato)
-    }
-    85%{
-        background: linear-gradient(320deg, orange, tomato)
-    }
-    86%{
-        background: linear-gradient(323deg, orange, tomato)
-    }
-    87%{
-        background: linear-gradient(326deg, orange, tomato);
-    }
-    88%{
-        background: linear-gradient(329deg, orange, tomato)
-    }
-    89%{
-        background: linear-gradient(331deg, orange, tomato)
-    }
-    90%{
-        background: linear-gradient(334deg, orange, tomato)
-    }
-    91%{
-        background: linear-gradient(337deg, orange, tomato)
-    }
-    92%{
-        background: linear-gradient(342deg, orange, tomato);
-    }
-    93%{
-        background: linear-gradient(346deg, orange, tomato)
-    }
-    94%{
-        background: linear-gradient(349deg, orange, tomato)
-    }
-    95%{
-        background: linear-gradient(350deg, orange, tomato)
-    }
-    96%{
-        background: linear-gradient(352deg, orange, tomato)
-    }
-    97%{
-        background: linear-gradient(354deg, orange, tomato);
-    }
-    98%{
-        background: linear-gradient(356deg, orange, tomato)
-    }
-    99%{
-        background: linear-gradient(358deg, orange, tomato)
-    }
-    100%{
-        background: linear-gradient(360deg, orange, tomato)
-    }
+.doneBtn {
+    background: green;
+    color: white;
+    font-weight: 600;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.undoneBtn {
+    background-color: orangered;
+    color: white;
+    font-weight: 600;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 @keyframes roam {
@@ -638,3 +450,303 @@ main {
         background: linear-gradient(360deg, orange, tomato)
     }
 }
+
+/* @keyframes circle {
+    1%{
+        border-radius: 0.6px;
+    }
+    2%{
+        border-radius: 1.2px;
+    }
+    3%{
+        border-radius: 1.8px;
+    }
+    4%{
+        border-radius: 2.4px;
+    }
+    5%{
+        border-radius: 3px;
+    }
+    6%{
+        border-radius: 3.6px;;
+    }
+    7%{
+        border-radius: 4.2px;
+    }
+    8%{
+        border-radius: 4.8px;
+    }
+    9%{
+        border-radius: 5.4px;
+    }
+    10%{
+        border-radius: 6px;
+    }
+    11%{
+        border-radius: 6.6px;
+    }
+    12%{
+        border-radius: 7.2px;
+    }
+    13%{
+        border-radius: 7.8px;
+    }
+    14%{
+        border-radius: 8.4px;
+    }
+    15%{
+        border-radius: 9px;
+    }
+    16%{
+        border-radius: 9.6px;
+    }
+    17%{
+        border-radius: 10.2px;
+    }
+    18%{
+        border-radius: 10.8px;
+    }
+    19%{
+        border-radius: 11.4px;
+    }
+    20%{
+        border-radius: 12px;
+    }
+    21%{
+        border-radius: 12.6px;
+    }
+    22%{
+        border-radius: 13.2px;
+    }
+    23%{
+        border-radius: 13.8px;
+    }
+    24%{
+        border-radius: 14.4px;
+    }
+    25%{
+        border-radius: 15px;
+    }
+    26%{
+        border-radius: 15.6px;
+    }
+    27%{
+        border-radius: 16.2px;
+    }
+    28%{
+        border-radius: 16.8px;   
+    }
+    29%{
+        border-radius: 17.4px;
+    }
+    30%{
+        border-radius: 18px;
+    }
+    31%{
+        border-radius:  18.6px;
+    }
+    32%{
+        border-radius: 19.2px;
+    }
+    33%{
+        border-radius: 19.8px;
+    }
+    34%{
+        border-radius: 20.4px;
+    }
+    35%{
+        border-radius: 21px;
+    }
+    36%{
+        border-radius: 21.6px;
+    }
+    37%{
+        border-radius: 22.2px;
+    }
+    38%{
+        border-radius: 22.8px;
+    }
+    39%{
+        border-radius: 23.4px;
+    }
+    40%{
+        border-radius: 24px;
+    }
+    41%{
+        border-radius: 24.6px;
+    }
+    42%{
+        border-radius: 25.2px;
+    }
+    43%{
+        border-radius:  25.8px;
+    }
+    44%{
+        border-radius: 26.4px;
+    }
+    45%{
+        border-radius: 27px;
+    }
+    46%{
+        border-radius: 27.6px;
+    }
+    47%{
+        border-radius: 28.2px;
+    }
+    48%{
+        border-radius: 28.8px;
+    }
+    49%{
+        border-radius: 29.4px;
+    }
+    50%{
+        border-radius: 30px;
+    }
+    51%{
+        border-radius: 30.6px;
+    }
+    52%{
+        border-radius: 31.2px;
+    }
+    53%{
+        border-radius: 31.8px;
+    }
+    54%{
+        border-radius: 32.4px;
+    }
+    55%{
+        border-radius: 33px;
+    }
+    56%{
+        border-radius: 33.6px;
+    }
+    57%{
+        border-radius: 34.2px;
+    }
+    58%{
+        border-radius: 34.8px;
+    }
+    59%{
+        border-radius: 35.4px;
+    }
+    60%{
+        border-radius: 36px;
+    }
+    61%{
+        border-radius: 36.6px;
+    }
+    62%{
+        border-radius: 37.2px;
+    }
+    63%{
+        border-radius: 37.8px;
+    }
+    64%{
+        border-radius: 38.4px;
+    }
+    65%{
+        border-radius: 39px;
+    }
+    67%{
+        border-radius: 39.6px;
+    }
+    68%{
+        border-radius: 40.2px;
+    }
+    69%{
+        border-radius: 40.8px;
+    }
+    70%{
+        border-radius: 41.4px;
+    }
+    71%{
+        border-radius: 42px;
+    }
+    72%{
+        border-radius: 42.6px;
+    }
+    73%{
+        border-radius: 43.2px;
+    }
+    74%{
+        border-radius: 43.8px;
+    }
+    75%{
+        border-radius: 44.4px;
+    }
+    76%{
+        border-radius: 45px;
+    }
+    77%{
+        border-radius: 45.6px;
+    }
+    78%{
+        border-radius: 46.2px;
+    }
+    79%{
+        border-radius: 46.8px;
+    }
+    80%{
+        border-radius: 47.4px;
+    }
+    81%{
+        border-radius: 48px;
+    }
+    82%{
+        border-radius: 48.6px;
+    }
+    83%{
+        border-radius: 49.2px;
+    }
+    84%{
+        border-radius: 49.8px;
+    }
+    85%{
+        border-radius: 50.4px;
+    }
+    86%{
+        border-radius: 51px;
+    }
+    87%{
+        border-radius: 51.6px;
+    }
+    88%{
+        border-radius: 52.2px;
+    }
+    89%{
+        border-radius: 52.8px;
+    }
+    90%{
+        border-radius: 53.4px;
+    }
+    91%{
+        border-radius: 54px;
+    }
+    92%{
+        border-radius: 54.6px;
+    }
+    93%{
+        border-radius: 55.2px;
+    }
+    94%{
+        border-radius: 55.8px;
+    }
+    95%{
+        border-radius: 56.4px;
+    }
+    96%{
+        border-radius: 57px;
+    }
+    97%{
+        border-radius: 57.6px;
+    }
+    98%{
+        border-radius:  58.2px;
+    }
+    99%{
+        border-radius: 58.8px;
+    }
+    100%{
+        border-radius: 59.4px;
+    }
+} */

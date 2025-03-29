@@ -12,14 +12,14 @@
     <input id="todo__field" type="text">
     <button id="addBtn">Add</button>
     <ul class="todo_list"></ul>
-    <button onclick="delMarked()">Delete Marked</button>
-    <button onclick="deleteAll()">Delete All</button>
+    <button class="delMarked" onclick="delMarked()">Delete Marked</button>
+    <button class="delAll" onclick="deleteAll()">Delete All</button>
     <div class="buttons">
         
-        <button>Filter</button>
+        <button class="filter_button">Filter</button>
         <div class="done_buttons">
-            <button onclick="marked()">Done</button>
-            <button onclick="unmarked()">Not done yet</button>
+            <button class="doneBtn" onclick="marked()">Done</button>
+            <button class="undoneBtn" onclick="unmarked()">Not done yet</button>
 
         </div>
 

@@ -14,7 +14,7 @@ addBtn.addEventListener("click", function () {
     }
     else {
         const todoItem = document.createElement('li');
-        todoItem.innerHTML = `<input onclick='completedFunc(this)' type='checkbox'/> ${todoField.value} <button onClick='removeItem(this)'>Remove</button>`;
+        todoItem.innerHTML = `<span class='inputCheckbox'><input onclick='completedFunc(this)' type='checkbox'/> ${todoField.value}</span> <button class='removeBtn' onClick='removeItem(this)'>Remove</button>`;
         todoList.appendChild(todoItem);
         todoField.value = '';
     }
