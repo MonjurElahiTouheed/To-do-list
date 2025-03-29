@@ -14,7 +14,7 @@ addBtn.addEventListener("click", function () {
     }
     else {
         const todoItem = document.createElement('li');
-        todoItem.innerHTML = `<input onclick='completedFunc()' type='checkbox'/> ${todoField.value} <button onClick='removeItem(this)'>Remove</button>`;
+        todoItem.innerHTML = `<input onclick='completedFunc(this)' type='checkbox'/> ${todoField.value} <button onClick='removeItem(this)'>Remove</button>`;
         todoList.appendChild(todoItem);
         todoField.value = '';
     }
@@ -69,10 +69,14 @@ function deleteAll() {
     })
 }
 
-function completedFunc(){
+function completedFunc(button){
     
             const checked = document.querySelectorAll('input[type=checkbox]:checked');
             completed.innerText = checked.length;
+            button.addEventListener('click', function(){
+                button.parentNode.style.textDecorationLine.toggle = 'line-through';
+            })
+            console.log(button)
                console.log(checked);
             console.log(checked.length);
         

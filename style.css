@@ -1,8 +1,16 @@
+body {
+    animation: roam 60s ease-in-out 1;
+    height: 100vh;
+}
 main {
-    width: 50%;
+    width: 35%;
     margin: auto;
     text-align: center;
     margin-top: 275px;
+    background-color: white;
+    border-radius: 60px;
+    padding: 10px;
+    animation: round 10s ease-in-out infinite
 }
 
 .filter_buttons{
@@ -28,4 +36,605 @@ main {
 
 .buttons:hover .done_buttons {
     height: 90px;
+}
+
+
+@keyframes roam {
+    1%{
+        background: linear-gradient(0deg, orange, tomato);
+    }
+    2%{
+        background: linear-gradient(4deg, orange, tomato)
+    }
+    3%{
+        background: linear-gradient(7deg, orange, tomato)
+    }
+    4%{
+        background: linear-gradient(10deg, orange, tomato)
+    }
+    5%{
+        background: linear-gradient(15deg, orange, tomato)
+    }
+    6%{
+        background: linear-gradient(20deg, orange, tomato);
+    }
+    7%{
+        background: linear-gradient(25deg, orange, tomato)
+    }
+    8%{
+        background: linear-gradient(30deg, orange, tomato)
+    }
+    9%{
+        background: linear-gradient(35deg, orange, tomato)
+    }
+    10%{
+        background: linear-gradient(40deg, orange, tomato)
+    }
+    11%{
+        background: linear-gradient(45deg, orange, tomato);
+    }
+    12%{
+        background: linear-gradient(50deg, orange, tomato)
+    }
+    13%{
+        background: linear-gradient(53deg, orange, tomato)
+    }
+    14%{
+        background: linear-gradient(57deg, orange, tomato)
+    }
+    15%{
+        background: linear-gradient(61deg, orange, tomato)
+    }
+    16%{
+        background: linear-gradient(63deg, orange, tomato);
+    }
+    17%{
+        background: linear-gradient(68deg, orange, tomato)
+    }
+    18%{
+        background: linear-gradient(71deg, orange, tomato)
+    }
+    19%{
+        background: linear-gradient(73deg, orange, tomato)
+    }
+    20%{
+        background: linear-gradient(76deg, orange, tomato)
+    }
+    21%{
+        background: linear-gradient(80deg, orange, tomato);
+    }
+    22%{
+        background: linear-gradient(86deg, orange, tomato)
+    }
+    23%{
+        background: linear-gradient(89deg, orange, tomato)
+    }
+    24%{
+        background: linear-gradient(93deg, orange, tomato)
+    }
+    25%{
+        background: linear-gradient(95deg, orange, tomato)
+    }
+    26%{
+        background: linear-gradient(100deg, orange, tomato);
+    }
+    27%{
+        background: linear-gradient(102deg, orange, tomato)
+    }
+    28%{
+        background: linear-gradient(105deg, orange, tomato)
+    }
+    29%{
+        background: linear-gradient(109deg, orange, tomato)
+    }
+    30%{
+        background: linear-gradient(114deg, orange, tomato)
+    }
+    31%{
+        background: linear-gradient(120deg, orange, tomato);
+    }
+    32%{
+        background: linear-gradient(125deg, orange, tomato)
+    }
+    33%{
+        background: linear-gradient(127deg, orange, tomato)
+    }
+    34%{
+        background: linear-gradient(130deg, orange, tomato)
+    }
+    35%{
+        background: linear-gradient(133deg, orange, tomato)
+    }
+    36%{
+        background: linear-gradient(137deg, orange, tomato);
+    }
+    37%{
+        background: linear-gradient(140deg, orange, tomato)
+    }
+    38%{
+        background: linear-gradient(145deg, orange, tomato)
+    }
+    39%{
+        background: linear-gradient(151deg, orange, tomato)
+    }
+    40%{
+        background: linear-gradient(157deg, orange, tomato)
+    }
+    41%{
+        background: linear-gradient(161deg, orange, tomato);
+    }
+    42%{
+        background: linear-gradient(164deg, orange, tomato)
+    }
+    43%{
+        background: linear-gradient(166deg, orange, tomato)
+    }
+    44%{
+        background: linear-gradient(169deg, orange, tomato)
+    }
+    45%{
+        background: linear-gradient(171deg, orange, tomato)
+    }
+    46%{
+        background: linear-gradient(173deg, orange, tomato);
+    }
+    47%{
+        background: linear-gradient(175deg, orange, tomato)
+    }
+    48%{
+        background: linear-gradient(177deg, orange, tomato)
+    }
+    49%{
+        background: linear-gradient(179deg, orange, tomato)
+    }
+    50%{
+        background: linear-gradient(180deg, orange, tomato)
+    }
+    51%{
+        background: linear-gradient(185deg, orange, tomato);
+    }
+    52%{
+        background: linear-gradient(190deg, orange, tomato)
+    }
+    53%{
+        background: linear-gradient(200deg, orange, tomato)
+    }
+    54%{
+        background: linear-gradient(210deg, orange, tomato)
+    }
+    55%{
+        background: linear-gradient(214deg, orange, tomato)
+    }
+    56%{
+        background: linear-gradient(218deg, orange, tomato);
+    }
+    57%{
+        background: linear-gradient(221deg, orange, tomato)
+    }
+    58%{
+        background: linear-gradient(226deg, orange, tomato)
+    }
+    59%{
+        background: linear-gradient(230deg, orange, tomato)
+    }
+    60%{
+        background: linear-gradient(232deg, orange, tomato)
+    }
+    61%{
+        background: linear-gradient(235deg, orange, tomato);
+    }
+    62%{
+        background: linear-gradient(239deg, orange, tomato)
+    }
+    63%{
+        background: linear-gradient(242deg, orange, tomato)
+    }
+    64%{
+        background: linear-gradient(247deg, orange, tomato)
+    }
+    65%{
+        background: linear-gradient(250deg, orange, tomato)
+    }
+    67%{
+        background: linear-gradient(255deg, orange, tomato);
+    }
+    68%{
+        background: linear-gradient(257deg, orange, tomato)
+    }
+    69%{
+        background: linear-gradient(260deg, orange, tomato)
+    }
+    70%{
+        background: linear-gradient(263deg, orange, tomato)
+    }
+    71%{
+        background: linear-gradient(267deg, orange, tomato)
+    }
+    72%{
+        background: linear-gradient(270deg, orange, tomato);
+    }
+    73%{
+        background: linear-gradient(273deg, orange, tomato)
+    }
+    74%{
+        background: linear-gradient(276deg, orange, tomato)
+    }
+    75%{
+        background: linear-gradient(280eg, orange, tomato)
+    }
+    76%{
+        background: linear-gradient(282deg, orange, tomato)
+    }
+    77%{
+        background: linear-gradient(284deg, orange, tomato);
+    }
+    78%{
+        background: linear-gradient(286deg, orange, tomato)
+    }
+    79%{
+        background: linear-gradient(290deg, orange, tomato)
+    }
+    80%{
+        background: linear-gradient(295deg, orange, tomato)
+    }
+    81%{
+        background: linear-gradient(300deg, orange, tomato)
+    }
+    82%{
+        background: linear-gradient(303deg, orange, tomato);
+    }
+    83%{
+        background: linear-gradient(307deg, orange, tomato)
+    }
+    84%{
+        background: linear-gradient(310deg, orange, tomato)
+    }
+    85%{
+        background: linear-gradient(320deg, orange, tomato)
+    }
+    86%{
+        background: linear-gradient(323deg, orange, tomato)
+    }
+    87%{
+        background: linear-gradient(326deg, orange, tomato);
+    }
+    88%{
+        background: linear-gradient(329deg, orange, tomato)
+    }
+    89%{
+        background: linear-gradient(331deg, orange, tomato)
+    }
+    90%{
+        background: linear-gradient(334deg, orange, tomato)
+    }
+    91%{
+        background: linear-gradient(337deg, orange, tomato)
+    }
+    92%{
+        background: linear-gradient(342deg, orange, tomato);
+    }
+    93%{
+        background: linear-gradient(346deg, orange, tomato)
+    }
+    94%{
+        background: linear-gradient(349deg, orange, tomato)
+    }
+    95%{
+        background: linear-gradient(350deg, orange, tomato)
+    }
+    96%{
+        background: linear-gradient(352deg, orange, tomato)
+    }
+    97%{
+        background: linear-gradient(354deg, orange, tomato);
+    }
+    98%{
+        background: linear-gradient(356deg, orange, tomato)
+    }
+    99%{
+        background: linear-gradient(358deg, orange, tomato)
+    }
+    100%{
+        background: linear-gradient(360deg, orange, tomato)
+    }
+}
+
+@keyframes roam {
+    1%{
+        background: linear-gradient(0deg, orange, tomato);
+    }
+    2%{
+        background: linear-gradient(4deg, orange, tomato)
+    }
+    3%{
+        background: linear-gradient(7deg, orange, tomato)
+    }
+    4%{
+        background: linear-gradient(10deg, orange, tomato)
+    }
+    5%{
+        background: linear-gradient(15deg, orange, tomato)
+    }
+    6%{
+        background: linear-gradient(20deg, orange, tomato);
+    }
+    7%{
+        background: linear-gradient(25deg, orange, tomato)
+    }
+    8%{
+        background: linear-gradient(30deg, orange, tomato)
+    }
+    9%{
+        background: linear-gradient(35deg, orange, tomato)
+    }
+    10%{
+        background: linear-gradient(40deg, orange, tomato)
+    }
+    11%{
+        background: linear-gradient(45deg, orange, tomato);
+    }
+    12%{
+        background: linear-gradient(50deg, orange, tomato)
+    }
+    13%{
+        background: linear-gradient(53deg, orange, tomato)
+    }
+    14%{
+        background: linear-gradient(57deg, orange, tomato)
+    }
+    15%{
+        background: linear-gradient(61deg, orange, tomato)
+    }
+    16%{
+        background: linear-gradient(63deg, orange, tomato);
+    }
+    17%{
+        background: linear-gradient(68deg, orange, tomato)
+    }
+    18%{
+        background: linear-gradient(71deg, orange, tomato)
+    }
+    19%{
+        background: linear-gradient(73deg, orange, tomato)
+    }
+    20%{
+        background: linear-gradient(76deg, orange, tomato)
+    }
+    21%{
+        background: linear-gradient(80deg, orange, tomato);
+    }
+    22%{
+        background: linear-gradient(86deg, orange, tomato)
+    }
+    23%{
+        background: linear-gradient(89deg, orange, tomato)
+    }
+    24%{
+        background: linear-gradient(93deg, orange, tomato)
+    }
+    25%{
+        background: linear-gradient(95deg, orange, tomato)
+    }
+    26%{
+        background: linear-gradient(100deg, orange, tomato);
+    }
+    27%{
+        background: linear-gradient(102deg, orange, tomato)
+    }
+    28%{
+        background: linear-gradient(105deg, orange, tomato)
+    }
+    29%{
+        background: linear-gradient(109deg, orange, tomato)
+    }
+    30%{
+        background: linear-gradient(114deg, orange, tomato)
+    }
+    31%{
+        background: linear-gradient(120deg, orange, tomato);
+    }
+    32%{
+        background: linear-gradient(125deg, orange, tomato)
+    }
+    33%{
+        background: linear-gradient(127deg, orange, tomato)
+    }
+    34%{
+        background: linear-gradient(130deg, orange, tomato)
+    }
+    35%{
+        background: linear-gradient(133deg, orange, tomato)
+    }
+    36%{
+        background: linear-gradient(137deg, orange, tomato);
+    }
+    37%{
+        background: linear-gradient(140deg, orange, tomato)
+    }
+    38%{
+        background: linear-gradient(145deg, orange, tomato)
+    }
+    39%{
+        background: linear-gradient(151deg, orange, tomato)
+    }
+    40%{
+        background: linear-gradient(157deg, orange, tomato)
+    }
+    41%{
+        background: linear-gradient(161deg, orange, tomato);
+    }
+    42%{
+        background: linear-gradient(164deg, orange, tomato)
+    }
+    43%{
+        background: linear-gradient(166deg, orange, tomato)
+    }
+    44%{
+        background: linear-gradient(169deg, orange, tomato)
+    }
+    45%{
+        background: linear-gradient(171deg, orange, tomato)
+    }
+    46%{
+        background: linear-gradient(173deg, orange, tomato);
+    }
+    47%{
+        background: linear-gradient(175deg, orange, tomato)
+    }
+    48%{
+        background: linear-gradient(177deg, orange, tomato)
+    }
+    49%{
+        background: linear-gradient(179deg, orange, tomato)
+    }
+    50%{
+        background: linear-gradient(180deg, orange, tomato)
+    }
+    51%{
+        background: linear-gradient(185deg, orange, tomato);
+    }
+    52%{
+        background: linear-gradient(190deg, orange, tomato)
+    }
+    53%{
+        background: linear-gradient(200deg, orange, tomato)
+    }
+    54%{
+        background: linear-gradient(210deg, orange, tomato)
+    }
+    55%{
+        background: linear-gradient(214deg, orange, tomato)
+    }
+    56%{
+        background: linear-gradient(218deg, orange, tomato);
+    }
+    57%{
+        background: linear-gradient(221deg, orange, tomato)
+    }
+    58%{
+        background: linear-gradient(226deg, orange, tomato)
+    }
+    59%{
+        background: linear-gradient(230deg, orange, tomato)
+    }
+    60%{
+        background: linear-gradient(232deg, orange, tomato)
+    }
+    61%{
+        background: linear-gradient(235deg, orange, tomato);
+    }
+    62%{
+        background: linear-gradient(239deg, orange, tomato)
+    }
+    63%{
+        background: linear-gradient(242deg, orange, tomato)
+    }
+    64%{
+        background: linear-gradient(247deg, orange, tomato)
+    }
+    65%{
+        background: linear-gradient(250deg, orange, tomato)
+    }
+    67%{
+        background: linear-gradient(255deg, orange, tomato);
+    }
+    68%{
+        background: linear-gradient(257deg, orange, tomato)
+    }
+    69%{
+        background: linear-gradient(260deg, orange, tomato)
+    }
+    70%{
+        background: linear-gradient(263deg, orange, tomato)
+    }
+    71%{
+        background: linear-gradient(267deg, orange, tomato)
+    }
+    72%{
+        background: linear-gradient(270deg, orange, tomato);
+    }
+    73%{
+        background: linear-gradient(273deg, orange, tomato)
+    }
+    74%{
+        background: linear-gradient(276deg, orange, tomato)
+    }
+    75%{
+        background: linear-gradient(280eg, orange, tomato)
+    }
+    76%{
+        background: linear-gradient(282deg, orange, tomato)
+    }
+    77%{
+        background: linear-gradient(284deg, orange, tomato);
+    }
+    78%{
+        background: linear-gradient(286deg, orange, tomato)
+    }
+    79%{
+        background: linear-gradient(290deg, orange, tomato)
+    }
+    80%{
+        background: linear-gradient(295deg, orange, tomato)
+    }
+    81%{
+        background: linear-gradient(300deg, orange, tomato)
+    }
+    82%{
+        background: linear-gradient(303deg, orange, tomato);
+    }
+    83%{
+        background: linear-gradient(307deg, orange, tomato)
+    }
+    84%{
+        background: linear-gradient(310deg, orange, tomato)
+    }
+    85%{
+        background: linear-gradient(320deg, orange, tomato)
+    }
+    86%{
+        background: linear-gradient(323deg, orange, tomato)
+    }
+    87%{
+        background: linear-gradient(326deg, orange, tomato);
+    }
+    88%{
+        background: linear-gradient(329deg, orange, tomato)
+    }
+    89%{
+        background: linear-gradient(331deg, orange, tomato)
+    }
+    90%{
+        background: linear-gradient(334deg, orange, tomato)
+    }
+    91%{
+        background: linear-gradient(337deg, orange, tomato)
+    }
+    92%{
+        background: linear-gradient(342deg, orange, tomato);
+    }
+    93%{
+        background: linear-gradient(346deg, orange, tomato)
+    }
+    94%{
+        background: linear-gradient(349deg, orange, tomato)
+    }
+    95%{
+        background: linear-gradient(350deg, orange, tomato)
+    }
+    96%{
+        background: linear-gradient(352deg, orange, tomato)
+    }
+    97%{
+        background: linear-gradient(354deg, orange, tomato);
+    }
+    98%{
+        background: linear-gradient(356deg, orange, tomato)
+    }
+    99%{
+        background: linear-gradient(358deg, orange, tomato)
+    }
+    100%{
+        background: linear-gradient(360deg, orange, tomato)
+    }
 }
