@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
         <h3>Todo List</h3>
-    <input id="todo__field" type="text">
-    <button id="addBtn">Add</button>
-    <ul class="todo_list"></ul>
-    <button class="delMarked" onclick="delMarked()">Delete Marked</button>
-    <button class="delAll" onclick="deleteAll()">Delete All</button>
-    <div class="buttons">
-        
-        <button class="filter_button">Filter</button>
-        <div class="done_buttons">
-            <button class="doneBtn" onclick="marked()">Done</button>
-            <button class="undoneBtn" onclick="unmarked()">Not done yet</button>
-
+        <input id="todo__field" type="text" placeholder="📑 Add your tasks here..">
+        <button id="addBtn">Add</button>
+        <ul class="todo_list"></ul>
+        <button class="delMarked" onclick="delMarked()">Delete Marked</button>
+        <button class="delAll" onclick="deleteAll()">Delete All</button>
+        <div class="buttons">
+            
+            <button class="filter_button">Filter</button>
+            <div class="done_buttons">
+                <button class="allBtn" onclick="allTasks()">All</button>
+                <button class="doneBtn" onclick="marked()">Done</button>
+                <button class="undoneBtn" onclick="unmarked()">Not done yet</button>
+            </div>
+            
         </div>
-
-    </div>
-    <p>Completed: <span class="completed"></span></p>
-    <p>Total Tasks: <span class="total"></span></p>
+        <div class="status">
+            <p>Completed: <span class="completed"></span></p>
+            <p>Total Tasks: <span class="total"></span></p>
+        </div>
     </main>
+    
     <script src="app.js"></script>
 </body>
-</html>  
+
+</html>

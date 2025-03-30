@@ -7,6 +7,7 @@ let count = 0
 completed.innerText = count;
 const checkboxes = document.querySelectorAll('input[type=checkbox]');
 
+
 addBtn.addEventListener("click", function () {
     const todoField = document.getElementById('todo__field');
     if (todoField.value === '' || todoField.value === '') {
@@ -14,7 +15,7 @@ addBtn.addEventListener("click", function () {
     }
     else {
         const todoItem = document.createElement('li');
-        todoItem.innerHTML = `<span class='inputCheckbox'><input onclick='completedFunc(this)' type='checkbox'/> ${todoField.value}</span> <button class='removeBtn' onClick='removeItem(this)'>Remove</button>`;
+        todoItem.innerHTML = `<input onclick='completedFunc(this)' type='checkbox'/> ${todoField.value} <button class='removeBtn' onClick='removeItem(this)'>Remove</button>`;
         todoList.appendChild(todoItem);
         todoField.value = '';
     }
@@ -33,15 +34,14 @@ addBtn.addEventListener("click", function () {
 })
 
 
-
 function removeItem(button) {
     const li = button.parentNode;
     li.remove();
     total.innerText = todoList.childElementCount;
     console.log(todoList.childElementCount);
     completedFunc()
-        
-    
+
+
 }
 
 function delMarked() {
@@ -64,54 +64,64 @@ function deleteAll() {
         total.innerText = todoList.childElementCount;
         console.log(todoList.childElementCount);
         // const checked = document.querySelectorAll('input[type=checkbox]:checked');
-            // completed.innerText = checked.length;
-            completedFunc()
+        // completed.innerText = checked.length;
+        completedFunc()
     })
 }
 
-function completedFunc(button){
-    
-            const checked = document.querySelectorAll('input[type=checkbox]:checked');
-            completed.innerText = checked.length;
-            button.addEventListener('click', function(){
-                button.parentNode.style.textDecorationLine.toggle = 'line-through';
-            })
-            console.log(button)
-               console.log(checked);
-            console.log(checked.length);
-        
-    
+function allTasks() {
+    console.log('butn kaj kore na ken');
+    const checkboxes = document.querySelectorAll('input[type=checkbox]');
+    checkboxes.forEach(checkbox => {
+        checkbox.parentNode.style.display = 'flex';
+    })
+}
+
+function completedFunc(button) {
+
+    const checked = document.querySelectorAll('input[type=checkbox]:checked');
+    completed.innerText = checked.length;
+    // button.parentNode.style.textDecoration = 'line-through';
+    // if(button.parentNode.style.textDecoration === 'line-through'){
+    //     button.parentNode.style.textDecoration = 'none';
+    // }
+    // else{
+    //     button.parentNode.style.textDecoration = 'line-through';
+    // }
+    button.parentNode.classList.toggle('line_through');
+    // console.log(button)
+
+    // console.log(button)
+    console.log(checked);
+    console.log(checked.length);
+
+
 }
 
 const doneButtons = document.querySelector('.done_buttons');
-function showfilterBtn(){
-            doneButtons.style.height = '90px';
-}
-
-function hidefilterBtn(){
-    doneButtons.style.height = '0px';
-}
 
 function marked() {
+    console.log("5")
     const checkboxes = document.querySelectorAll('input[type=checkbox]');
     checkboxes.forEach(checkbox => {
         if (!checkbox.checked) {
             checkbox.parentNode.style.display = 'none';
         }
-        else{
-            checkbox.parentNode.style.display = 'block';
+        else {
+            checkbox.parentNode.style.display = 'flex';
         }
     })
 }
 
 function unmarked() {
+    console.log("5")
     const checkboxes = document.querySelectorAll('input[type=checkbox]');
     checkboxes.forEach(checkbox => {
         if (checkbox.checked) {
             checkbox.parentNode.style.display = 'none';
         }
-         else{
-            checkbox.parentNode.style.display = 'block';
+        else {
+            checkbox.parentNode.style.display = 'flex';
         }
     })
 }
